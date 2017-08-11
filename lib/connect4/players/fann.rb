@@ -18,11 +18,11 @@ module Players
     def to_train_value(board_value)
       case board_value
       when sym
-        1
+        -1
       when '.'
         0
       else
-        -1
+        1
       end
     end
 

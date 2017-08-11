@@ -19,7 +19,7 @@ referee = Referee.new(:winner)
 10.times { puts "\n" }
 
 # Game loop
-[player_x, player_o].cycle do |player|
+[player_o,player_x].cycle do |player|
   player.next_move(board)
 
   winner = referee.score(board)
